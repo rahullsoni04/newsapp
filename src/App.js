@@ -11,6 +11,8 @@ import {
 
 export default class App extends Component {
   x = "Rahul";
+  pageSize = 12;
+  coutry = "in";
   render() {
     return (
       <>
@@ -18,25 +20,25 @@ export default class App extends Component {
           <NavBar/>
           <Switch>
             <Route exact path="/">
-              <NewsFeed key = "general" page_size={3} country = {"in"} category = {"general"} />
+              <NewsFeed key = "general" pageSize={this.pageSize} country = {this.country} category = {"general"} />
             </Route>
             <Route exact path="/business">
-              <NewsFeed key = "business" page_size={3} country = {"in"} category = {"business"} />
+              <NewsFeed key = "business" pageSize={this.pageSize} country = {this.country} category = {"business"} />
             </Route>
             <Route exact path="/entertainment">
-              <NewsFeed key = "entertainment" page_size={3} country = {"in"} category = {"entertainment"} />
+              <NewsFeed key = "entertainment" pageSize={this.pageSize} country = {this.country} category = {"entertainment"} />
             </Route>
             <Route exact path="/health">
-              <NewsFeed key = "health" page_size={3} country = {"in"} category = {"health"} />
+              <NewsFeed key = "health" pageSize={this.pageSize} country = {this.country} category = {"health"} />
             </Route>
             <Route exact path="/science">
-              <NewsFeed key = "science" page_size={3} country = {"in"} category = {"science"} />
+              <NewsFeed key = "science" pageSize={this.pageSize} country = {this.country} category = {"science"} />
             </Route>
             <Route exact path="/sports">
-              <NewsFeed key = "sports" page_size={3} country = {"in"} category = {"sports"} />
+              <NewsFeed key = "sports" pageSize={this.pageSize} country = {this.country} category = {"sports"} />
             </Route>
             <Route exact path="/technology">
-              <NewsFeed key = "technology" page_size={3} country = {"in"} category = {"technology"} />
+              <NewsFeed key = "technology" pageSize={this.pageSize} country = {this.country} category = {"technology"} />
             </Route>
           </Switch>
         </Router>
