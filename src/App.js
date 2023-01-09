@@ -10,7 +10,6 @@ import {
 } from 'react-router-dom';
 
 export default class App extends Component {
-  x = "Rahul";
   pageSize = 12;
   coutry = "in";
   render() {
@@ -20,7 +19,7 @@ export default class App extends Component {
           <NavBar/>
           <Switch>
             <Route exact path="/">
-              <NewsFeed key = "general" pageSize={this.pageSize} country = {this.country} category = {"general"} />
+              <NewsFeed key = "/general" page_size={this.pageSize} country = {this.country} category = {"general"} />
             </Route>
             <Route exact path="/business">
               <NewsFeed key = "business" pageSize={this.pageSize} country = {this.country} category = {"business"} />

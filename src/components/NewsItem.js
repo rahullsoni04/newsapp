@@ -11,10 +11,10 @@ export class NewsItem extends Component {
                     </span> */}
                     <img src={img} className="card-img-top" alt="..."/>
                     <Card.Footer>
-                       <small className="text-muted">Author: <span class="badge bg-warning">{author?author:"Unknown"}</span> on <span class="badge bg-secondary">{new Date(date).toGMTString()}</span></small>
+                       <small className="text-muted">Author: <span className="badge bg-warning">{author?author:"Unknown"}</span> on <span className="badge bg-secondary">{new Date(date).toGMTString()}</span></small>
                     </Card.Footer>
                     <div className="card-body">
-                    Source: <span class="badge bg-success"> {source}</span>
+                    Source: <span className="badge bg-success"> {source}</span>
                         <h5 className="card-title">{[title.slice(0,40),(title.length>=50)?"....":""]}</h5>
                         <p className="card-text">{[description.slice(0,80),(description.length>=80)?"......":""]}</p>
                         <a rel="noreferrer" href={url} target="_blank" className="btn btn-sm btn-primary">Read More</a>
