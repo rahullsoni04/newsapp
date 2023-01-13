@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   Link
 } from 'react-router-dom';
 
-export class NavBar extends Component {
-  render() {
+function NavBar(){
     return (
       <>
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container" style={{marginLeft:"60px"}}>
+          <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" >
             <Link className="navbar-brand" to="/">
               News Villa
             </Link>
@@ -30,18 +30,18 @@ export class NavBar extends Component {
                     Home
                   </Link>
                 </li>
-                <li className="nav-item"><Link className="nav-link" to = "/business">business</Link></li>
-                <li className="nav-item"><Link className="nav-link" to = "/entertainment">entertainment</Link></li>
-                <li className="nav-item"><Link className="nav-link" to = "/health">health</Link></li>
-                <li className="nav-item"><Link className="nav-link" to = "/science">science</Link></li>
-                <li className="nav-item"><Link className="nav-link" to = "/sports">sports</Link></li>
-                <li className="nav-item"><Link className="nav-link" to = "/technology">technology</Link></li>
+                <li className="nav-item"><Link className="nav-link" to = "/business">Business</Link></li>
+                <li className="nav-item"><Link className="nav-link" to = "/entertainment">Entertainment</Link></li>
+                <li className="nav-item"><Link className="nav-link" to = "/health">Health</Link></li>
+                <li className="nav-item"><Link className="nav-link" to = "/science">Science</Link></li>
+                <li className="nav-item"><Link className="nav-link" to = "/sports">Sports</Link></li>
+                <li className="nav-item"><Link className="nav-link" to = "/technology">Technology</Link></li>
               </ul>
             </div>
           </nav>
+        </div>
       </>
     );
-  }
 }
 
 export default NavBar;
